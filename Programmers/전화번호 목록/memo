@@ -1,0 +1,17 @@
+시퀀스 컨테이너
+vector , list deque와 같이 순서대로 자료 보관
+
+연관 컨테이너
+어떤 key와 짝을 이루어 자료를 보관
+자료를 넣고, 빼고, 찾을 때 key 필요.
+  -많지 않은 자료를 보관하는 경우
+  -검색 속도 중요한 경우 
+  -대량의 자료를 저장
+  -빠르게 검색하기 위해
+연관 컨테이너는 map, set, hash_map, hash_set이 있습니다. 
+중복되는 key 값을 사용할 경우 앞에 'multi'를 붙여 사용됩니다. 
+multi_map, multi_set, hash_multimap, hash_multiset
+
+
+map, set 컨테이너 -> 자료를 정렬하여 저장, 정렬된 순서대로 순회
+hash ->정렬필요없으며 빠른 검색ㅇ르 원할때

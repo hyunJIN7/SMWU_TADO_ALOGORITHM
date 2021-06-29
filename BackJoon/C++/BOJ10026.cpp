@@ -10,12 +10,12 @@ void dfs1(int y, int x, char c){
 	for(int i = 0 ; i< 4 ; i++)	dfs1(y+dy[i],x+dx[i],c);
 }
 
-void dfs2(int y, int x,char c){ // c : ÇöÀç Ã£À» ±×·ì 
+void dfs2(int y, int x,char c){ // c : Ã‡Ã¶Ã€Ã§ ÃƒÂ£Ã€Â» Â±Ã—Â·Ã¬ 
 	if( y<0||y>=n||x<0 ||x>=n || rgb2[y][x] == 0 ) return;
 	if(rgb2[y][x] == 'B'){
 		if( c != 'B') return;
 	}
-	else{ // R,G ÀÎ°æ¿ì 
+	else{ // R,G Ã€ÃŽÂ°Ã¦Â¿Ã¬ 
 		if( c == 'B') return;
 	}
 	rgb2[y][x] = 0;

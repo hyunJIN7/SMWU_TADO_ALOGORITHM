@@ -9,7 +9,6 @@ void dfs1(int y, int x, char c){
 	rgb1[y][x] = 0;
 	for(int i = 0 ; i< 4 ; i++)	dfs1(y+dy[i],x+dx[i],c);
 }
-
 void dfs2(int y, int x,char c){ // c : ÇöÀç Ã£À» ±×·ì 
 	if( y<0||y>=n||x<0 ||x>=n || rgb2[y][x] == 0 ) return;
 	if(rgb2[y][x] == 'B'){
@@ -21,7 +20,6 @@ void dfs2(int y, int x,char c){ // c : ÇöÀç Ã£À» ±×·ì
 	rgb2[y][x] = 0;
 	for(int i = 0 ; i< 4 ; i++)	dfs2(y+dy[i],x+dx[i],c);
 }
-
 int main(){
 	cin>>n;
 	for(int i = 0,j=0 ; i < n;i++,j=0){

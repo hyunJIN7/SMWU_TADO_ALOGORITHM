@@ -42,7 +42,6 @@ int main(){
 			}
 		}
 	}
-
 	cout<<ans1<<" "<<ans2;
 	return 0;
 }
